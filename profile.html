@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User profile</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-p14xG6TdQGN1XgV1+4m9v2YMpXzy99MYO9czCk6nCMe/aXy3DyVR6sXburyykgf4"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+        <div class="card shadow p-4 form-card w-100" style="max-width: 640px;">
+            <h2 class="mb-3 text-center">Your profile</h2>
+            <form id="profile-form" novalidate>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="profileFirstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="profileFirstName" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="profileLastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="profileLastName" required />
+                    </div>
+                    <div class="col-12">
+                        <label for="profileEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="profileEmail" disabled />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="profileAge" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="profileAge" min="1" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="profileDob" class="form-label">Date of birth</label>
+                        <input type="date" class="form-control" id="profileDob" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="profileContact" class="form-label">Contact</label>
+                        <input type="tel" class="form-control" id="profileContact" />
+                    </div>
+                    <div class="col-12">
+                        <label for="profileAddress" class="form-label">Address</label>
+                        <textarea class="form-control" id="profileAddress" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-outline-secondary" id="logout-btn">Log out</button>
+                </div>
+                <div class="mt-3" id="profile-feedback"></div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

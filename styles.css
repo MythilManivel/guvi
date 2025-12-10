@@ -1,0 +1,24 @@
+body {
+    background: radial-gradient(circle at top left, rgba(13, 110, 253, 0.25), transparent 35%),
+        #f4f6fb;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 16px;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+#signup-feedback,
+#login-feedback,
+#profile-feedback {
+    min-height: 24px;
+}
+
+.alert-sm {
+    margin-bottom: 0;
+}
