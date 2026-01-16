@@ -21,4 +21,7 @@ body {
 
 .alert-sm {
     margin-bottom: 0;
+    
+    max-width: 540px;
 }
+
